@@ -2,14 +2,31 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import * as React from 'react';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 import { shadows } from '@mui/system';
 
 import './App.css';
 
+function StandaloneToggleButton(props) {
+  const [selected, setSelected] = React.useState(false);
 
-function changeButtonColor(button) {
-  console.log("Hello");
+  return (
+    <ToggleButton
+      value="check"
+      selected={selected}
+      onChange={() => {
+        setSelected(!selected);
+      }}
+
+      variant="outlined" size="large" style={{ width: "100%" }}
+      color="success"
+    >
+      {props.esg}
+      </ToggleButton>
+  );
 }
 
 function Values() {
@@ -17,37 +34,47 @@ function Values() {
     <div className="App">
         <Grid 
         container 
-        spacing={0}
+        spacing={3}
         direction="row"
         alignItems="center"
         justifyContent="center"
-        sx={{ p: 30, backgroundColor: 'white'}}
+        sx={{ p: 1, height: "100%", width: "100%"}}
+        
         >
 
-          
+        <Box
+          component="img"
+          sx={{
+            height: "200%",
+            width: "35%",
+          }}
+          alt="The house from the offer."
+          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
+        />
 
-        <Grid item style={{ width: "50%" }}>
+        <Grid item style={{ width: "65%", height: "100%"}}>
                 <Grid item sx={{p: 1}}>
-            <Button variant="outlined" size="large" style={{ width: "100%" }} onClick={changeButtonColor(this)} > Option 1 </Button>
+            <StandaloneToggleButton esg="Business Ethics"></StandaloneToggleButton>
+            {/* <Button variant="outlined" size="large" style={{ width: "100%" }} onClick={changeButtonColor(this)} > Option 1 </Button> */}
                 </Grid>
 
               <Grid item sx={{ p: 1 }}>
-                <Button variant="outlined" size="large" style={{ width: "100%" }}> Option 2 </Button>
+                <StandaloneToggleButton esg="Socail">HHH</StandaloneToggleButton>
               </Grid>
 
           <Grid item sx={{ p: 1 }}>
-            <Button variant="outlined" size="large" style={{ width: "100%" }}> Option 3 </Button>
+            <StandaloneToggleButton esg="ENV">HHH</StandaloneToggleButton>
           </Grid>
 
           <Grid item sx={{ p: 1 }}>
-            <Button variant="outlined" size="large" style={{ width: "100%" }}> Option 4 </Button>
+            <StandaloneToggleButton esg="media">HHH</StandaloneToggleButton>
           </Grid>
           <Grid item sx={{ p: 1 }}>
-            <Button variant="outlined" size="large" style={{ width: "100%" }}> Option 5 </Button>
+            <StandaloneToggleButton esg="?">HHH</StandaloneToggleButton>
           </Grid>
 
           <Grid item sx={{ p: 1 }}>
-            <Button variant="outlined" size="large" style={{ width: "100%" }}> Option 6 </Button>
+            <StandaloneToggleButton esg="??">HHH</StandaloneToggleButton>
           </Grid>
  
             </Grid>
