@@ -13,8 +13,8 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/about" exact element={<About />} />
-        <Route path="/" exact element={<App />} />
-         <Route path="/Signup" exact element={<Signup />} />
+        {/* <Route path="/" exact element={<App />} /> */}
+         <Route path="/" exact element={<Signup />} />
       </Routes>
     </Router>
   </React.StrictMode>,

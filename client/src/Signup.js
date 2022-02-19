@@ -1,4 +1,7 @@
 import TextField from '@mui/material/TextField';
+import GoogleButton from 'react-google-button'
+import Grid from '@mui/material/Grid';
+
 import Button from '@mui/material/Button';
 import './App.css';
 import {signInWithGoogle} from "./Firebase";
@@ -12,13 +15,19 @@ const user = null
 function Signup() {
   return (
     <div className="App">
-        <Button variant="text" onClick={signInWithGoogle}>
-          Click me
-          </Button>
-        <h1></h1>
-        <Button variant="text" onClick={getInfo}>  
-        get info   
-          </Button>
+      <Grid
+        container
+        spacing={2}
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        sx={{ p: 3 }}
+      >
+        <GoogleButton type="light" onClick={signInWithGoogle}></GoogleButton>
+        <Button variant="text" onClick={getInfo}>
+          get info
+        </Button>
+      </Grid>
     </div>
   );
 }
