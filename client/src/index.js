@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import About from "./About";
+import Signup from './Signup'
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/about" exact element={<About />} />
         <Route path="/" exact element={<App />} />
+         <Route path="/Signup" exact element={<Signup />} />
       </Routes>
     </Router>
   </React.StrictMode>,
