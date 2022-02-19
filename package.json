@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "server": "cd api/; flask run",
+    "client": "cd client/; npm run start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
