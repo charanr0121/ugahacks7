@@ -23,7 +23,7 @@ function Signup() {
         justifyContent="center"
         sx={{ p: 3 }}
       >
-        <GoogleButton type="light" onClick={signInWithGoogle}></GoogleButton>
+        <GoogleButton type="light" onClick={signInWithGoogle} />
         <Button variant="text" onClick={getInfo}>
           get info
         </Button>
