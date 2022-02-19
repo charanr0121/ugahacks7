@@ -19,19 +19,23 @@ def getStockHistory(ticker):
     where ticker="%s"
     """ %(ticker.upper())
 
-    print(query)
     query_job = client.query(query)
 
-    # print("HELLOOOO")
-
-    for row in query_job:
-        print(row)
-
     df = query_job.to_dataframe()
-    print(df)
+
     return df.to_json(orient="records", lines=True)
 
+def getCryptoHistory(ticker):
+    query = """
+    select * from `ugahacks7-341806.data.crypto_history`
+    where ticker="%s"
+    """ %(ticker.upper())
 
+    query_job = client.query(query)
+
+    df = query_job.to_dataframe()
+
+    return df.to_json(orient="records", lines=True)
 
 # getStockHistory("GOOG")
 # for file in listdir('./history'):
