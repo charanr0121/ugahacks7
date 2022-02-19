@@ -14,7 +14,7 @@ cd api
 ```
 first time running:
 ```
-export FLASK_APP=hello
+export FLASK_APP=app
 ```
 ```
 flask run
