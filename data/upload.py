@@ -7,7 +7,9 @@ client = bigquery.Client()
 for file in listdir('./history'):
     if file.endswith(".csv") == False:
         continue
-    with open('./history/AAPL.csv', newline='') as csvfile:
+    f = "./history/" + file
+    print(f)
+    with open(f, newline='') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
         next(spamreader, None)
         for row in spamreader:
