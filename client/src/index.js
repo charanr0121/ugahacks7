@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import About from './About';
+import Signup from './Signup'
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <About />
+    {/* <About /> */}
+    < Signup / >
   </React.StrictMode>,
   document.getElementById('root')
 );
