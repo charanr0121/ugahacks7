@@ -1,0 +1,4 @@
+volume,volume_weighted_avg,open_price,close_price,high_price,low_price,time,num_transactions,ticker
+74806,9.8229,9.8,9.83,9.83,9.8,2022-01-28 05:00:00,39,APXI
+50201,9.8968,9.95,9.97,9.97,9.88,2022-02-11 05:00:00,17,APXI
+300000,9.89,9.89,9.89,9.89,9.89,2022-02-15 05:00:00,1,APXI

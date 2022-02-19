@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import About from "./About";
+import Stock from "./Stock";
+
 import Signup from './Signup'
 import Values from './Values'
 import reportWebVitals from "./reportWebVitals";
@@ -17,6 +19,9 @@ ReactDOM.render(
         <Route path="/" exact element={<App />} />
         <Route path="/Signup" exact element={<Signup />} />
         <Route path="/Values" exact element={<Values />} />
+        <Route path="/stock" exact element={<Stock />} />
+
+        {/* <Route path="/" exact element={<App />} /> */}
       </Routes>
     </Router>
   </React.StrictMode>,
