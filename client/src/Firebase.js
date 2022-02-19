@@ -7,6 +7,9 @@ import {
 } from "firebase/analytics";
 
 import{getAuth,GoogleAuthProvider, signInWithRedirect, getRedirectResult, onAuthStateChanged} from 'firebase/auth';
+
+import { useNavigate } from "react-router-dom";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -31,7 +34,8 @@ const provider = new GoogleAuthProvider();
 export const signInWithGoogle = () => {
    signInWithRedirect(auth, provider).then((result) => {
         
-        
+    navigate("/about");
+
         
     }).catch((error) => {
         console.log("sign in error");
