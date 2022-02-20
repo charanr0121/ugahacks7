@@ -9,6 +9,7 @@ import Signup from './Signup'
 import Values from './Values'
 import InvestmentGoals from './InvestmentGoals'
 import reportWebVitals from "./reportWebVitals";
+import Portfolio from "./Portfolio";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/Values" exact element={<Values />} />
         <Route path="/stock" exact element={<Stock />} />
         <Route path="/InvestmentGoals" exact element={<InvestmentGoals/>} />
+        <Route path="/Portfolio" exact element={<Portfolio/>} />
       </Routes>
     </Router>
   </React.StrictMode>,

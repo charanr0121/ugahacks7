@@ -10,7 +10,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 
 const auth = null;
-const user = null
+const user = null;
 
 function Signup() {
   return (
