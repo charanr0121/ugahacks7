@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import About from "./About";
 import Stock from "./Stock";
-import Home from "./Home";
+import Home from "./home";
 import Signup from './Signup'
 import Values from './Values'
 import InvestmentGoals from './InvestmentGoals'
