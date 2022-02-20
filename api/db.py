@@ -15,7 +15,7 @@ client = bigquery.Client()
 
 def getStockHistory(ticker):
     query = """
-    select * from `ugahacks7-341806.data.stock_history`
+    select time, close_price, ticker from `ugahacks7-341806.data.stock_history`
     where ticker="%s"
     """ %(ticker.upper())
 
@@ -23,7 +23,7 @@ def getStockHistory(ticker):
 
     df = query_job.to_dataframe()
 
-    return df.to_json(orient="records", lines=True)
+    return df.to_numpy()
 
 def getCryptoHistory(ticker):
     query = """
