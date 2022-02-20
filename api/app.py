@@ -5,7 +5,7 @@ import db
 import json
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "/Users/charan/Downloads/ugahacks7-341806-57e3395e0bc8.json"
+app.config['SECRET_KEY'] = "ugahacks7-341806-57e3395e0bc8.json"
 
 @app.route("/")
 def hello_world():
