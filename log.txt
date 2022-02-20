@@ -1,0 +1,100 @@
+* 640eb72 (recsys) added rec system to api
+* bd0eb25 Finished forecasting
+*   b9afcf8 resolved merge contract
+|\  
+| *   0e11d8e (origin/forecasting, forecasting) resolved merge conflict
+| |\  
+| | * 75bf472 (charts) More forecasts
+| | * 667a229 (origin/charts) chart
+| | * dae4375 CHARTS
+| | | * 612a1d3 (HEAD -> main, origin/main, origin/HEAD) Update cover image
+| | | * 504ea7b Update index.js
+| | | * be3ad23 Create home.js
+| | | * 3465c70 better verion of yValues
+| | |/  
+| | * 88a64d3 resolved thingy
+| | *   ddf41d3 Merge branch 'main' of github.com:charanr0121/ugahacks7
+| | |\  
+| | | * db42d6b (origin/flask-stuff) stuff
+| | | * cc0b83b crypto endpoint
+| | | * 191406e stock endpoint
+| | * | e17f9a5 dfsd
+| | * | 620e310 ?? DS  store
+| | * |   a96affb (origin/yValues) merged with InvestmentGoals
+| | |\ \  
+| | | * | 66bcca9 (origin/investmentGoals) Added slider and lottie animation
+| | | * | 2cdee34 added InvestmentGoals
+| | * | | 487596c added correct sel
+| | * | |   f966101 Merge branch 'main' of github.com:charanr0121/ugahacks7 into yValues
+| | |\ \ \  
+| | | | |/  
+| | | |/|   
+| | | * | cc2902f stock page
+| | | * |   2d3ce9c Merge branch 'more-react' if it merges an updated upstream into a topic branch.
+| | | |\ \  
+| | * | | | 2f453c0 fix
+| | | |_|/  
+| | |/| |   
+| | * | | 08c5438 added option selectors
+| | | | | *   4084682 (refs/stash) WIP on recsys: 021cbf3 built reccomendation system
+| | | | | |\  
+| |_|_|_|/ /  
+|/| | | | |   
+| | | | | * 759a1a5 index on recsys: 021cbf3 built reccomendation system
+| |_|_|_|/  
+|/| | | |   
+* | | | | 021cbf3 built reccomendation system
+* | | | | 2857162 Added crypto forecasts
+|/ / / /  
+* | | | c65993d created reqs file, and more forecasts
+* | | | bf72662 Finished characterizing ESG data
+* | | | ae1559e Added first forecasts
+* | | | 8a1093d started forecasting work
+| |/ /  
+|/| |   
+* | |   2f08328 Merge branch 'main' of https://github.com/charanr0121/ugahacks7 into main
+|\ \ \  
+* | | | bf23946 added crypto data
+| | | | * 9746a5b (origin/more-react) Update About.js
+| | | |/  
+| | | * ded0ae0 sign up page
+| | | * 9ca9e6e s
+| | | * cd673da google button
+| | |/  
+| |/|   
+| * | 3dbc4b9 delete dsstore
+| * | bad4825 upload
+|/ /  
+* | 8dcfea3 added sustainbility file
+* | e24db71 added combined stocks file:
+* | 305b41f move stocks to data dir
+* |   9b74fe9 (routes) Merge branch 'main' into routes
+|\ \  
+| * \   5436e78 Merge branch 'main' of https://github.com/charanr0121/ugahacks7 into main
+| |\ \  
+* | \ \   c5850cc (origin/routes) Merge branch 'routes' of https://github.com/charanr0121/ugahacks7 into routes
+|\ \ \ \  
+| * | | | 81de355 bigquery scripts
+| | |_|/  
+| |/| |   
+* | | |   e6cc891 Merge branch 'main' into routes
+|\ \ \ \  
+| | |/ /  
+| |/| |   
+| * | | d2efdcc (origin/data_collection, data_collection) Added scrapers and data
+* | | | 9ef7af4 Added chromedriver.exe to file
+| |/ /  
+|/| |   
+* | |   bc4422e fixed merge conflict
+|\ \ \  
+| * | | f59c8f4 (origin/firebaseAuth) basic google auth implamented
+| |/ /  
+* | | ca1d3bb routes created
+| |/  
+|/|   
+* | d12cf15 styling about
+|/  
+* f5a5af8 about page
+* 9ac464f fix readme
+* 77a225f initial commit
+* 9ac98e2 Initial commit
