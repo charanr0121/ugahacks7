@@ -2,6 +2,7 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import {Link} from "react-router-dom";
 import { shadows } from '@mui/system';
 import * as React from 'react';
 import Slider from '@mui/material/Slider';
@@ -112,6 +113,15 @@ function InvestmentGoals() {
                   <Grid item sx={{ p: 1 }}>
                       <h1>Mid Term Investing</h1>
                   </Grid>
+
+                            {/* Next Button */}
+          <Grid item sx={{ p: 1 }}></Grid>
+          <Link to="/portfolio">
+              <Button>
+               NEXT
+              </Button>
+            </Link>
+
               </Grid>   
         </Grid>
 
