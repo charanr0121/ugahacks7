@@ -29,6 +29,9 @@ The goal is to expand functionality and incorporate a larger stock universe with
 # Instructions
 
 ```
+cd ugahacks7-main/client
+npm install
+cd .. (returning back to main directory)
 npm run dev
 ```
 
