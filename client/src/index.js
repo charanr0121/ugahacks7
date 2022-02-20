@@ -3,7 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import About from "./About";
+import Stock from "./Stock";
+
 import Signup from './Signup'
+import Values from './Values'
+import InvestmentGoals from './InvestmentGoals'
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -14,7 +18,10 @@ ReactDOM.render(
       <Routes>
         <Route path="/about" exact element={<About />} />
         <Route path="/" exact element={<App />} />
-         <Route path="/Signup" exact element={<Signup />} />
+        <Route path="/Signup" exact element={<Signup />} />
+        <Route path="/Values" exact element={<Values />} />
+        <Route path="/stock" exact element={<Stock />} />
+        <Route path="/InvestmentGoals" exact element={<InvestmentGoals/>} />
       </Routes>
     </Router>
   </React.StrictMode>,

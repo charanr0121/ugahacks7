@@ -34,7 +34,7 @@ const provider = new GoogleAuthProvider();
 export const signInWithGoogle = () => {
    signInWithRedirect(auth, provider).then((result) => {
         
-    navigate("/about");
+    // navigate("/about");
 
         
     }).catch((error) => {
