@@ -5,14 +5,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 // import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import {Link} from "react-router-dom";
 import GoogleButton from 'react-google-button'
 import './App.css';
 import {signInWithGoogle} from "./Firebase";
@@ -80,14 +80,16 @@ function Home() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
+               <Link to="/about">
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+               Sign In
               </Button>
+              </Link>
 
               {/* <div className="App"> */}
                 <Grid
@@ -108,14 +110,14 @@ function Home() {
 
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  {/* <Link href="#" variant="body2"> */}
                     Forgot password?
-                  </Link>
+                  {/* </Link> */}
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
+                  {/* <Link href="#" variant="body2"> */}
                     {"Don't have an account? Sign Up"}
-                  </Link>
+                  {/* </Link> */}
                 </Grid>
               </Grid>
             </Box>
