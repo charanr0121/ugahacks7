@@ -9,13 +9,13 @@ Environmental, Social, and Governance risks are increasingly driving and guiding
 Jasmine helps individuals invest using historical data, personal values, and an algorithmic recommendation system. We also provide simple and intuitive predictions for stock and crypto prices based on Neural Prophet (machine learning). We use consensus mechanisms to inform and educate our users about crypto ESG concerns.
 
 ## Challenges:
-NCR - Eliminate the Friction: In the real world, we constantly deal with slow, inconvenient activities that interrupt the natural flow of our days. However, with the advent of modern technology, these annoying experiences are quickly disappearing (mobile banking, filing taxes, online shopping, online reservations for restaurants). Find a bad or cumbersome experience in a consumer’s daily activities (banking, retail, dining), and design a BETTER WAY to do that annoying task, or bypass it, or fix its issues… i.e. remove the friction.
+**NCR** - Eliminate the Friction: In the real world, we constantly deal with slow, inconvenient activities that interrupt the natural flow of our days. However, with the advent of modern technology, these annoying experiences are quickly disappearing (mobile banking, filing taxes, online shopping, online reservations for restaurants). Find a bad or cumbersome experience in a consumer’s daily activities (banking, retail, dining), and design a BETTER WAY to do that annoying task, or bypass it, or fix its issues… i.e. remove the friction.
 
-Our Solution: A convient method to invest by constructing a portflio that aligns with personal ESG values.
+**Our Solution**: A convient method to invest by constructing a portflio that aligns with personal ESG values.
 
-Blackrock - ESG: a solution that can be used to integrate ESG into an individual’s investment experience. Think: how can we educate individual investors on ESG topics, provide easily digestible ESG data, establish an individual’s unique ESG values and potentially even identify ESG solutions that fit a profile. The practice of incorporating ESG information into investment decisions to help enhance risk-adjusted returns.
+**Blackrock** - ESG: a solution that can be used to integrate ESG into an individual’s investment experience. Think: how can we educate individual investors on ESG topics, provide easily digestible ESG data, establish an individual’s unique ESG values and potentially even identify ESG solutions that fit a profile. The practice of incorporating ESG information into investment decisions to help enhance risk-adjusted returns.
 
-Our Solution: Developed an invesment platform that educates indivual investors on ESG invesments and provides assistant through an algorithmic recommendation system.
+**Our Solution**: Developed an invesment platform that educates indivual investors on ESG invesments and provides assistant through an algorithmic recommendation system.
 
 ## How we built it
 Jasmine was built using Python, Flask, React.js, Google BigQuery, and DataWrapper. We pull data from polygon.io, kaggle, and other historical stock sources.
