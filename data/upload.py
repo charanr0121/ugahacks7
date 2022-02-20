@@ -36,3 +36,4 @@ for file in listdir('./history'):
                 "%s");
                 """ % (int(row[0]), float(row[1]), float(row[2]), float(row[3]), float(row[4]), float(row[5]), str(row[6]), int(row[7]), str(row[8]))
             query_job = client.query(query)
+ 

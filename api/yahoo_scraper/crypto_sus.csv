@@ -1,0 +1,11 @@
+,name,staking_mech
+0,bitcoin,proofofwork
+1,ethereum,proofofwork
+2,tether,
+3,Binance_USD,proofofauthority
+4,usd_coin,
+5,cardano,proofofstake
+6,solana,byzantinefaulttolerance
+7,xrp,distributedconsensus
+8,terra,proofofstake
+9,polkadot,proofofstake
