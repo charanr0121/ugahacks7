@@ -1,6 +1,8 @@
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Stock from "./Stock";
+
 import Button from '@mui/material/Button';
 import { shadows } from '@mui/system';
 import * as React from 'react';
@@ -30,9 +32,14 @@ function StandaloneToggleButton(props) {
             variant="outlined" size="small" style={{ width: "75px", height: "75px"}}
             color="primary"
         >
-            {props.esg}
-            {"\n"}
-            {"Ticker"}
+            <div>
+            <h2>{props.esg}</h2>
+            </div>
+            {/* <br></br> */}
+            <div>
+            {props.ticker}
+
+            </div>
         </ToggleButton>
     );
 }
@@ -60,6 +67,9 @@ export function LottieRender() {
 }
 
 function Portfolio() {
+
+    const [tick, setTick] = React.useState("AAPL");
+
     return (
         <div className="App" sx={{ p: 0, height: "100%", width: "100%", }}>
             <Grid
@@ -74,7 +84,7 @@ function Portfolio() {
 
 
                 
-                <Grid item style={{ width: "60%", height: "100%", backgroundColor:'blue'}}
+                <Grid item style={{ width: "60%", height: "100%", backgroundColor:'#48bfc4'}}
                     container
                     spacing={0}
                     direction="column"
@@ -88,18 +98,24 @@ function Portfolio() {
                         spacing={0}
                         direction="row"
                         justifyContent="center" 
-                        sx={{ p: 0, height: "20%", width: "100%", backgroundColor: 'white' }}>
+                        sx={{ p: 0, height: "20%", width: "100%", backgroundColor: '#48bfc4' }}>
+
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S1">HHH</StandaloneToggleButton>
+                            <Button variant="outlined" onClick={()=> { setTick("BLNK")
+                        console.log(tick)}} >BLNK</Button>
+
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S2">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("MRNA")
+                        console.log(tick)}} >MRNA</Button>
+                            {/* <StandaloneToggleButton esg="2" ticker="MRNA" >HHH</StandaloneToggleButton> */}
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S3">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("MTCH")
+                        console.log(tick)}} >MTCH</Button>
                         </Grid>
 
 
@@ -111,18 +127,21 @@ function Portfolio() {
                         spacing={0}
                         direction="row"
                         justifyContent="center"
-                        sx={{ p: 0, height: "20%", width: "100%", backgroundColor: 'white' }}>
+                        sx={{ p: 0, height: "20%", width: "100%", backgroundColor: '#48bfc4' }}>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S4">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("AVNW")
+                        console.log(tick)}} >AVNW</Button>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S4">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("HEAR")
+                        console.log(tick)}} >HEAR</Button>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S5">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("CTRN")
+                        console.log(tick)}} >CTRN</Button>
                         </Grid>
 
                     </Grid>
@@ -135,18 +154,21 @@ function Portfolio() {
                         spacing={0}
                         direction="row"
                         justifyContent="center"
-                        sx={{ p: 0, height: "20%", width: "100%", backgroundColor: 'white' }}>
+                        sx={{ p: 0, height: "20%", width: "100%", backgroundColor: '#48bfc4' }}>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S6">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("ARCB")
+                        console.log(tick)}} >ARCB</Button>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S7">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("NVDA")
+                        console.log(tick)}} >NVDA</Button>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S8">HHH</StandaloneToggleButton>
+                        <Button variant="outlined" onClick={()=> { setTick("FOSL")
+                        console.log(tick)}} >FOSL</Button>
                         </Grid>
 
                     </Grid>
@@ -162,12 +184,14 @@ function Portfolio() {
                     alignItems="center"
                     justifyContent="center"
                     sx={{ p: 0, height: "100%", width: "40%", backgroundColor: 'white' }}>
-                    <h1> Stock Ticker</h1>
-                    <h2> small text</h2>
+
+                        <Stock ticker={tick}/>
+
+
                 </Grid>
 
                        
-
+                
 
                 </Grid>
         </div>
