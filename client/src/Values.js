@@ -2,6 +2,7 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import {Link} from "react-router-dom";
 import * as React from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
@@ -87,17 +88,18 @@ function Values() {
             <StandaloneToggleButton esg="Human Rights"></StandaloneToggleButton>
           </Grid>
 
+                    {/* Next Button */}
+            <Grid item sx={{ p: 1 }}></Grid>
+          <Link to="/investmentgoals">
+              <Button>
+               NEXT
+              </Button>
+            </Link>
 
-
+        </Grid>
 
         </Grid>
 
-
-
-
-
-
-        </Grid>
     </div>
   );
 
