@@ -5,6 +5,10 @@ import Button from '@mui/material/Button';
 import * as React from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Lottie from 'react-lottie';
+import animationData from './lotties/lf20_q9mzugao.json';
+import { red } from '@mui/material/colors';
+
 
 import { shadows } from '@mui/system';
 
@@ -21,8 +25,8 @@ function StandaloneToggleButton(props) {
         setSelected(!selected);
       }}
 
-      variant="outlined" size="large" style={{ width: "100%" }}
-      color="success"
+      variant="outlined" size="large" style={{ width: "70%" }}
+      color="primary"
     >
       {props.esg}
       </ToggleButton>
@@ -31,36 +35,43 @@ function StandaloneToggleButton(props) {
 
 function Values() {
   return (
-    <div className="App">
+    <div className="App" sx={{ p: 0, height: "100%", width: "100%",   }}>
         <Grid 
         container 
-        spacing={3}
+        spacing={0}
         direction="row"
-        alignItems="center"
-        justifyContent="center"
-        sx={{ p: 1, height: "100%", width: "100%"}}
+        
+        sx={{ p: 0, height: "860px", width: "100%", backgroundColor: 'white'}}
         
         >
 
-        <Box
-          component="img"
-          sx={{
-            height: "200%",
-            width: "35%",
-          }}
-          alt="The house from the offer."
-          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
-        />
+          <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
 
-        <Grid item style={{ width: "65%", height: "100%"}}>
-                <Grid item sx={{p: 1}}>
+          sx={{ p: 0, height: "100%", width: "40%", backgroundColor: '#a9c7f7'}}>
+            <LottieRender></LottieRender>
+          </Grid>
+
+        <Grid item style={{ width: "60%", height: "100%" }}
+          container
+          spacing={0}
+          direction="column"
+          
+          justifyContent="center"
+
+        >
+          <Grid item sx={{ p: 1 }}>
             <StandaloneToggleButton esg="Business Ethics"></StandaloneToggleButton>
             {/* <Button variant="outlined" size="large" style={{ width: "100%" }} onClick={changeButtonColor(this)} > Option 1 </Button> */}
-                </Grid>
+          </Grid>
 
-              <Grid item sx={{ p: 1 }}>
-                <StandaloneToggleButton esg="Socail">HHH</StandaloneToggleButton>
-              </Grid>
+          <Grid item sx={{ p: 1 }}>
+            <StandaloneToggleButton esg="Socail">HHH</StandaloneToggleButton>
+          </Grid>
 
           <Grid item sx={{ p: 1 }}>
             <StandaloneToggleButton esg="ENV">HHH</StandaloneToggleButton>
@@ -76,9 +87,41 @@ function Values() {
           <Grid item sx={{ p: 1 }}>
             <StandaloneToggleButton esg="??">HHH</StandaloneToggleButton>
           </Grid>
- 
-            </Grid>
+
         </Grid>
+
+
+
+
+
+
+        </Grid>
+    </div>
+  );
+
+
+  
+}
+
+
+
+export function LottieRender() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
+  return (
+    <div>
+      <Lottie
+        options={defaultOptions}
+        height={350}
+        width={500}
+      />
     </div>
   );
 }

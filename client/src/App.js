@@ -1,6 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
+import { createTheme } from '@mui/material/styles';
+import { orange } from '@mui/material/colors';
+
+const theme = createTheme({
+  status: {
+    danger: orange[500],
+  },
+});
+
 
 function App() {
   return (

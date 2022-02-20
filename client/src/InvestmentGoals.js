@@ -45,7 +45,6 @@ export function DiscreteSliderValues() {
                 valueLabelFormat={valueLabelFormat}
                 getAriaValueText={valuetext}
                 step={null}
-                
                 marks={marks}
             />
         </Box>
