@@ -6,7 +6,7 @@ import { shadows } from '@mui/system';
 import * as React from 'react';
 import Slider from '@mui/material/Slider';
 import Lottie from 'react-lottie';
-import animationData from './lotties/lf20_q9mzugao.json';
+import animationData from './lotties/lf30_editor_ohsolr8d.json';
 
 
 
@@ -22,7 +22,7 @@ const marks = [
     },
     {
         value: 100,
-        label: '7',
+        label: '7+',
     },
 
 ];
@@ -38,7 +38,7 @@ function valueLabelFormat(value) {
 
 export function DiscreteSliderValues() {
     return (
-        <Box sx={{ width: 600 }}>
+        <Box sx={{ width: 600, size: "small"}}>
             <Slider
                 aria-label="Restricted values"
                 defaultValue={1}
@@ -46,6 +46,7 @@ export function DiscreteSliderValues() {
                 getAriaValueText={valuetext}
                 step={null}
                 marks={marks}
+                
             />
         </Box>
     );
@@ -75,15 +76,39 @@ export function LottieRender() {
 function InvestmentGoals() {
   return (
     <div className="App">
-        <Grid 
-        container 
-        spacing={2}
-        direction="column"
-        alignItems="center"
-        justifyContent="center"
-        sx={{p: 3}}>
-            <LottieRender></LottieRender>
-            <DiscreteSliderValues></DiscreteSliderValues>       
+          <Grid
+              container
+              spacing={0}
+              direction="row"
+
+              sx={{ p: 0, height: "860px", width: "100%", backgroundColor: 'white' }}
+              >
+
+                <Grid
+                    container
+                    spacing={0}
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    sx={{ p: 0, height: "100%", width: "40%", backgroundColor: '#a9c7f7' }}>
+                    <h2>What are your investment goals  \n Text Words Letters</h2>
+                </Grid>
+
+                <Grid item style={{ width: "60%", height: "100%" }}
+                    container
+                    spacing={0}
+                    direction="column"
+                    justifyContent="center"
+                    alignItems="center"   
+                >   
+                  <Grid item sx={{ p: 1 }}>
+                        <LottieRender></LottieRender>
+                    </Grid>
+
+                  <Grid item sx={{ p: 5 }}>
+                        <DiscreteSliderValues></DiscreteSliderValues>
+                    </Grid>
+              </Grid>   
         </Grid>
 
 

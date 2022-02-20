@@ -53,7 +53,8 @@ function Values() {
           justifyContent="center"
 
           sx={{ p: 0, height: "100%", width: "40%", backgroundColor: '#a9c7f7'}}>
-            <LottieRender></LottieRender>
+          <h1 > What part of ESG matters to you?</h1>
+          <LottieRender mode="bounce"> </LottieRender>
           </Grid>
 
         <Grid item style={{ width: "60%", height: "100%" }}
@@ -109,6 +110,7 @@ export function LottieRender() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
+
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
