@@ -27,13 +27,15 @@ export default class Stock extends React.Component {
   state = {
     data: [],
   };
+  componentDidUpdate() {
+    console.log(this.props.ticker)
 
-  componentDidMount() {
-    axios.get(`http://localhost:5000/stock/goog`).then((res) => {
+    axios.get('http://localhost:5000/stock/'+this.props.ticker).then((res) => {
       const data = res.data;
+      // console.log(data)
       this.setState({ data });
       for (var i = 0; i < data.length; i++) {
-        console.log(data[i]);
+        // console.log(data[i]);
       }
     });
   }

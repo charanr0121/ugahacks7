@@ -22,7 +22,7 @@ ReactDOM.render(
         <Route path="/Home" exact element={<Home />} />
         <Route path="/Signup" exact element={<Signup />} />
         <Route path="/Values" exact element={<Values />} />
-        <Route path="/stock" exact element={<Stock />} />
+        <Route path="/stock" exact element={<Stock ticker={"GOOG"}/>} />
         <Route path="/InvestmentGoals" exact element={<InvestmentGoals/>} />
         <Route path="/Portfolio" exact element={<Portfolio/>} />
       </Routes>
