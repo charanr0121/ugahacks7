@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import About from "./About";
 import Stock from "./Stock";
-
+import Home from "./Home";
 import Signup from './Signup'
 import Values from './Values'
 import InvestmentGoals from './InvestmentGoals'
@@ -18,6 +18,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/about" exact element={<About />} />
         <Route path="/" exact element={<App />} />
+        <Route path="/Home" exact element={<Home />} />
         <Route path="/Signup" exact element={<Signup />} />
         <Route path="/Values" exact element={<Values />} />
         <Route path="/stock" exact element={<Stock />} />
