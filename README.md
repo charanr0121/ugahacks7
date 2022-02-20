@@ -1,5 +1,7 @@
 # Jasmine - UGA Hacks 7
 
+![Jasmine - UGA Hacks 7](https://github.com/charanr0121/ugahacks7/blob/main/UI-UX/UGAHacks7.png?raw=true)
+
 ## Inspiration
 Environmental, Social, and Governance risks are increasingly driving and guiding investments, but much of investment remains out of reach for the vast majority of Americans. Jasmine aims to solve this disparity by helping Americans conviently invest in stocks, bonds, and cryptocurrencies that align with their personal values. Our naming was very much inspired by Blackrocks Aladdin API.
 
