@@ -18,7 +18,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/about" exact element={<About />} />
-        <Route path="/" exact element={<App />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/Home" exact element={<Home />} />
         <Route path="/Signup" exact element={<Signup />} />
         <Route path="/Values" exact element={<Values />} />
