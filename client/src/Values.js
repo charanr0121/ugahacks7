@@ -25,7 +25,7 @@ function StandaloneToggleButton(props) {
         setSelected(!selected);
       }}
 
-      variant="outlined" size="large" style={{ width: "70%" }}
+      variant="outlined" size="large" style={{ width: "78%" }}
       color="primary"
     >
       {props.esg}
@@ -53,7 +53,7 @@ function Values() {
           justifyContent="center"
 
           sx={{ p: 0, height: "100%", width: "40%", backgroundColor: '#a9c7f7'}}>
-          <h1 > What part of ESG matters to you?</h1>
+          <h1 > Which ESG Values Matter To You?</h1>
           <LottieRender mode="bounce"> </LottieRender>
           </Grid>
 
@@ -61,33 +61,34 @@ function Values() {
           container
           spacing={0}
           direction="column"
-          
           justifyContent="center"
 
         >
+
           <Grid item sx={{ p: 1 }}>
-            <StandaloneToggleButton esg="Business Ethics"></StandaloneToggleButton>
-            {/* <Button variant="outlined" size="large" style={{ width: "100%" }} onClick={changeButtonColor(this)} > Option 1 </Button> */}
+            <h1>Core ESG Values</h1>
           </Grid>
 
           <Grid item sx={{ p: 1 }}>
-            <StandaloneToggleButton esg="Socail">HHH</StandaloneToggleButton>
+            <StandaloneToggleButton esg="Sustainability"></StandaloneToggleButton>
+          </Grid>
+
+
+
+          <Grid item sx={{ p: 1 }}>
+            <StandaloneToggleButton esg="Education"></StandaloneToggleButton>
           </Grid>
 
           <Grid item sx={{ p: 1 }}>
-            <StandaloneToggleButton esg="ENV">HHH</StandaloneToggleButton>
+            <StandaloneToggleButton esg="Equity"></StandaloneToggleButton>
           </Grid>
 
           <Grid item sx={{ p: 1 }}>
-            <StandaloneToggleButton esg="media">HHH</StandaloneToggleButton>
-          </Grid>
-          <Grid item sx={{ p: 1 }}>
-            <StandaloneToggleButton esg="?">HHH</StandaloneToggleButton>
+            <StandaloneToggleButton esg="Human Rights"></StandaloneToggleButton>
           </Grid>
 
-          <Grid item sx={{ p: 1 }}>
-            <StandaloneToggleButton esg="??">HHH</StandaloneToggleButton>
-          </Grid>
+
+
 
         </Grid>
 

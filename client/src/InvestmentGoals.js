@@ -14,7 +14,7 @@ import './App.css';
 const marks = [
     {
         value: 0,
-        label: '1 to 3',
+        label: '1 to 3' ,
     },
     {
         value: 50,
@@ -22,7 +22,7 @@ const marks = [
     },
     {
         value: 100,
-        label: '7+',
+        label: '7+ ', 
     },
 
 ];
@@ -90,8 +90,8 @@ function InvestmentGoals() {
                     direction="column"
                     alignItems="center"
                     justifyContent="center"
-                    sx={{ p: 0, height: "100%", width: "40%", backgroundColor: '#a9c7f7' }}>
-                    <h2>What are your investment goals  \n Text Words Letters</h2>
+                    sx={{ p: 0, height: "100%", width: "40%", backgroundColor: '#a9c7f7'}}>
+                    <h2>How many years do you plan on investing?</h2>
                 </Grid>
 
                 <Grid item style={{ width: "60%", height: "100%" }}
@@ -108,6 +108,10 @@ function InvestmentGoals() {
                   <Grid item sx={{ p: 5 }}>
                         <DiscreteSliderValues></DiscreteSliderValues>
                     </Grid>
+
+                  <Grid item sx={{ p: 1 }}>
+                      <h1>Mid Term Investing</h1>
+                  </Grid>
               </Grid>   
         </Grid>
 
