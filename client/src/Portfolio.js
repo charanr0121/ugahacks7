@@ -30,9 +30,14 @@ function StandaloneToggleButton(props) {
             variant="outlined" size="small" style={{ width: "75px", height: "75px"}}
             color="primary"
         >
-            {props.esg}
-            {"\n"}
-            {"Ticker"}
+            <div>
+            <h2>{props.esg}</h2>
+            </div>
+            {/* <br></br> */}
+            <div>
+            {props.ticker}
+
+            </div>
         </ToggleButton>
     );
 }
@@ -91,15 +96,15 @@ function Portfolio() {
                         sx={{ p: 0, height: "20%", width: "100%", backgroundColor: 'white' }}>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S1">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="3" ticker="BLNK" >HHH</StandaloneToggleButton>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S2">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="2" ticker="MRNA" >HHH</StandaloneToggleButton>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S3">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="4" ticker="MTCH" >HHH</StandaloneToggleButton>
                         </Grid>
 
 
@@ -114,15 +119,15 @@ function Portfolio() {
                         sx={{ p: 0, height: "20%", width: "100%", backgroundColor: 'white' }}>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S4">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="3" ticker="AVNW" >HHH</StandaloneToggleButton>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S4">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="3" ticker="HEAR" >HHH</StandaloneToggleButton>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S5">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="4" ticker="CTRN" >HHH</StandaloneToggleButton>
                         </Grid>
 
                     </Grid>
@@ -138,15 +143,15 @@ function Portfolio() {
                         sx={{ p: 0, height: "20%", width: "100%", backgroundColor: 'white' }}>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S6">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="4" ticker="ARCB" >HHH</StandaloneToggleButton>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S7">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="4" ticker="NVDA" >HHH</StandaloneToggleButton>
                         </Grid>
 
                         <Grid item sx={{ p: 1 }}>
-                            <StandaloneToggleButton esg="00S8">HHH</StandaloneToggleButton>
+                            <StandaloneToggleButton esg="4" ticker="FOSL" >HHH</StandaloneToggleButton>
                         </Grid>
 
                     </Grid>
