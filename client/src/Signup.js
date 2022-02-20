@@ -1,4 +1,6 @@
 import TextField from '@mui/material/TextField';
+import React from "react";
+
 import GoogleButton from 'react-google-button'
 import Grid from '@mui/material/Grid';
 
@@ -12,24 +14,30 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 const auth = null;
 const user = null
 
-function Signup() {
-  return (
-    <div className="App">
-      <Grid
-        container
-        spacing={2}
-        direction="column"
-        alignItems="center"
-        justifyContent="center"
-        sx={{ p: 3 }}
-      >
-        <GoogleButton type="light" onClick={signInWithGoogle} />
-        <Button variant="text" onClick={getInfo}>
-          get info
-        </Button>
-      </Grid>
-    </div>
-  );
+function handleClick() {
+
+}
+
+export default class Signup extends React.Component {
+  render(){
+    return (
+      <div className="App">
+        <Grid
+          container
+          spacing={2}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          sx={{ p: 3 }}
+        >
+          <GoogleButton type="light" onClick={signInWithGoogle} />
+          <Button variant="text" onClick={getInfo}>
+            get info
+          </Button>
+        </Grid>
+      </div>
+    );
+  }
 }
 
 function getInfo() {
@@ -43,4 +51,4 @@ function getInfo() {
     }
 }
 
-export default Signup;
+// export default Signup;

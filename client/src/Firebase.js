@@ -6,7 +6,7 @@ import {
     getAnalytics
 } from "firebase/analytics";
 
-import{getAuth,GoogleAuthProvider, signInWithRedirect, getRedirectResult, onAuthStateChanged} from 'firebase/auth';
+import{getAuth,GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, onAuthStateChanged} from 'firebase/auth';
 
 import { useNavigate } from "react-router-dom";
 
@@ -32,7 +32,7 @@ export const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
 export const signInWithGoogle = () => {
-   signInWithRedirect(auth, provider).then((result) => {
+   signInWithPopup(auth, provider).then((result) => {
         
     // navigate("/about");
 
